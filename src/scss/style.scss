@@ -1,0 +1,322 @@
+@import 'typography/typography';
+@import 'variables/colors';
+@import 'links/links';
+
+body {
+	font-family: $font-family-sans-serif;
+	background-color: #fff;
+}
+
+/*	HEADER
+===============================================================================*/
+.header {
+	.speak {
+		background-image: url('/img/phone.png');
+		background-size: auto 22px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		padding-left: 30px;
+		display: inline-block;
+		&.hidden {
+			display: none;
+		}
+	}
+}
+
+/*	HERO - JUMOBOTRON
+===============================================================================*/
+
+.jumbotron {
+	background-image: url('/img/jumbotron-bg.jpg');
+	background-size: cover;
+
+	.container {
+		h2 {
+			font-weight: 500;
+			font-size: 2.5rem;
+			&:first-of-type {
+
+				span {
+					background-image: url('/img/red-underline1.png');
+					background-repeat: no-repeat;
+					background-position: left bottom;
+					background-size: auto;
+					padding-bottom: 5px;
+				}
+			}
+			&:last-of-type {
+				span {
+					background-image: url('/img/red-underline2.png');
+					background-repeat: no-repeat;
+					background-position: left bottom;
+					background-size: auto;
+					padding-bottom: 5px;
+				}
+			}
+		}
+		h3 {
+			font-weight: 400;
+			font-size: 1.95rem;
+			line-height: 1.4;
+			margin-bottom: 0;
+		}
+		h3:first-of-type {
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 500;
+			letter-spacing: 1px;
+			overflow: hidden;
+			margin-bottom: .5rem;
+
+			&:before, &:after {
+				background-color: #fff;
+				content: "";
+				display: inline-block;
+				height: 2px;
+				position: relative;
+				vertical-align: middle;
+				width: 50%;
+			}
+			&:before {
+				right: 0.5em;
+				margin-left: -50%;
+			}
+			&:after {
+				left: 0.5em;
+				margin-right: -50%;
+			}
+		}
+	}
+}
+
+
+/*	VIDEO
+===============================================================================*/
+
+.video {
+	position: relative;
+	p {
+		font-size: 1.25rem;
+		strong {
+			font-weight: 900;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.video {
+		p {
+			font-size: 2rem;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+/*	BUNDLES
+===============================================================================*/
+
+.bundles {
+	@keyframes fadeIn {
+		to {
+		  opacity: 1;
+		}
+	}
+	padding-top: 20px;
+	display: block;
+	opacity: 0;
+	animation: fadeIn 1s ease-in 1 forwards;
+
+	&.hidden {
+		animation-play-state: paused;
+		display: none;
+	}
+
+	.bundle {
+		margin: 0 20px 50px;
+
+		
+		&.popular {
+			.popular-head {
+				text-transform: uppercase;
+				line-height: 2;
+				letter-spacing: 1px;
+				font-size: .9rem;
+				color: #fff;
+			}
+			background-color: $color__blue;
+			text-align: center;
+			padding-bottom: 12px;
+			margin-bottom: 62px;
+		}
+
+		.card {
+			border-radius: 0px;
+			margin: 0 12px;
+			box-shadow: 0 0 12px rgba(0,0,0,.4);
+			border: none;
+			position: relative;
+			letter-spacing: normal;
+
+			.discount {
+				position: absolute;
+				top: -40px;
+				right: -35px;
+				background-color: #e87b15;
+				color: #fff;
+				font-weight: 700;
+				text-transform: uppercase;
+				padding: 15px;
+				border-radius: 1000px;
+				line-height: 1;
+				box-shadow: 0 0 10px rgba(0,0,0,.4);
+				
+				span {
+					display: block;
+					font-size: 1.4rem;
+				}
+			}
+
+			h4 {
+				margin-bottom: 2px;
+			}
+
+			h5 {
+				font-weight: 400;
+				font-size: 1.15rem;
+				color: #008ba4;
+			}
+
+			.card-img {
+				padding: 15px 10px;
+				img {
+					width: 100%;
+				}
+			}
+
+			.price {
+				font-size: 2.15rem;
+				font-weight: 700;
+				position: relative;
+				padding-right: 30px;
+				line-height: 1.2;
+
+				span {
+					padding-left: 7px;
+					text-transform: uppercase;
+					font-weight: 500;
+					font-size: .35em;
+					position: absolute;
+					text-decoration: underline;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
+			.highlight {
+				font-size: 1.2rem;
+				background-image: url('/img/bundles/highlight.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+	}
+}
+
+/*	SUPPLEMENT FACTS
+===============================================================================*/
+
+.algaecal-table {
+	width: 100%;
+	border: 3px solid #000;
+	h5 {
+		margin: 0;
+		padding: 0;
+		font-size: 1.15rem;
+		line-height: 1;
+	}
+	.black-bar {
+		background-color: #000;
+	}
+}
+
+/*	GUARANTEE
+===============================================================================*/
+.guarantee {
+	
+	.row {
+		background-image: url('/img/jumbotron-bg.jpg');
+		background-size: cover;
+		text-align: center;
+	}
+
+	h3 {
+		color: #e4762f;
+	}
+	
+	.neuls-name {
+		font-size: 1.2rem;
+	}
+}
+.modal-body {
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+}
+
+/*	AS SEEN ON
+===============================================================================*/
+
+.as-seen-on {
+	.card {
+		border-radius: 0;
+		border: 0;
+		box-shadow: 0 0 12px rgba(0,0,0,.4);
+
+		.card-header {
+			background-color: $color__green-dark;
+			border-radius: 0;
+			color: #fff;
+			text-align: center;
+		}
+	}
+}
+
+/*	REFERENCES
+===============================================================================*/
+
+.references {
+	h4 {
+		color: $color__blue;
+		text-align: center;
+	}
+	ol {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+/*	FOOTER
+===============================================================================*/
+footer {
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 300;
+
+	.footer-nav {
+		li.list-inline-item {
+			padding: 0 10px 0 0;
+			margin: 0 5px 0 0;
+			border-right: 1.5px solid #444;
+			line-height: 1.2;
+			&:last-of-type {
+				border-right: none;
+				padding-right: 0;
+				margin-right: 0;
+			}
+		}
+		a {
+			color: #777;
+		}
+	}
+}

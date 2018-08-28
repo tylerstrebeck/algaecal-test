@@ -1,0 +1,39 @@
+a.cta-badge {
+	color: #fff;
+	background-color: $color__green;
+	border-radius: 6px;
+	border-bottom: 7px solid $color__green-dark;
+	padding: 10px 50px 4px;
+	margin: 10px;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1.1rem;
+	position: relative;
+	left: 15px;
+
+	&:hover {
+		text-decoration: none;
+		background-color: #34993b
+	}
+	&:active {
+		border-bottom: 2px;
+		padding-top: 13px;
+		padding-bottom: 8px;
+	}
+	&:after {
+		content:'\00A0\00A0►';
+	}
+	&:before {
+		content: '';
+		background-image: url('https://www.algaecal.com/wp-content/uploads/Final_960px-e1478104202859.png');
+		background-size: 80px 80px;
+		background-repeat: no-repeat;
+		display: block;
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: -40px;
+		top: 55%;
+		transform: translateY(-50%);
+	}
+}

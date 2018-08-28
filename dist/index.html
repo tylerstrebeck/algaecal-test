@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>AlgaeCal</title>
+
+</head>
+<body>
+	<!-- Logo and phone -->
+	<div class="container header py-md-4">
+		<div class="row px-2">
+			<div class="col-md py-2 mt-md-1 mt-4 logo">
+				<img src="img/algaeCalLogo.png" alt="AlgaeCal">
+			</div>
+			<div class="col-md text-md-right pt-md-2 pb-2">
+				<h4 class="mb-1"><strong>Tap to Talk <span id="phone-number" class="text-info"></span></strong></h4>
+				<div class="speak hidden" id="speak">Speak to our Bone Health Specialists!</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Hero message -->
+	<div class="jumbotron jumbotron-fluid text-white py-4">
+		<div class="container text-lg-center py-lg-5">
+			<h3>Introducing</h3>
+			<h3>The ONLY Calcium Supplement that</h3>
+			<h2 class="mb-0"><span>Increases Bone</span></h2>
+			<h2><span>Density*</span></h2>
+			<h3>...or Your Money Back.</h3>
+		</div>
+	</div>
+
+	<!-- Video -->
+	<div class="container video mb-5">
+		<div class="row">
+			<div class="col-lg-6">
+				<p>
+					Build <strong>brand new bone</strong> WITHIN 6 MONTHS with this <strong>rare algae</strong> calcium...even if you're 85!
+				</p>
+			</div>
+			<div class="col-lg">
+				<script src="//fast.wistia.com/embed/medias/cecdwaq3dz.jsonp" async></script>
+				<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+				<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cecdwaq3dz videoFoam=true " style="height:100%;width:100%">&nbsp;</div></div></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bundles -->
+	<a id="bundles-anchor"></a>
+	<div class="container bundles hidden" id="bundles">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="bundle">
+					<div class="card text-center">
+						<div class="discount"><span>20%</span>off</div>
+						<div class="card-body">
+							<h4>3 Month Supply</h4>
+							<h5 class="my-0">4 AlgaeCal Plus</h5>
+							<h5>3 Strontium Boost</h5>
+							<div class="card-img"><img src="/img/bundles/bottles1.png" alt="3 Month Supply"></div>
+							<div class="price"><sup>$</sup>233<span>usd</span></div>
+							<div class="highlight">Only <strong><sup>$</sup>2.58</strong>/Day</div>
+							<div class="add-to-cart">
+								<a class="cta-badge" href="https://www.algaecal.com/product/bone-builder-packs/">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="bundle popular">
+					<span class="popular-head">Most Popular</span>
+					<div class="card text-center">
+						<div class="discount"><span>35%</span>off</div>
+						<div class="card-body">
+							<h4>6 Month Supply</h4>
+							<h5 class="my-0">8 AlgaeCal Plus</h5>
+							<h5>6 Strontium Boost</h5>
+							<div class="card-img"><img src="/img/bundles/bottles2.png" alt="3 Month Supply"></div>
+							<div class="price"><sup>$</sup>337<span>usd</span></div>
+							<div class="highlight">Only <strong><sup>$</sup>2.09</strong>/Day</div>
+							<div class="add-to-cart">
+								<a class="cta-badge" href="https://www.algaecal.com/product/bone-builder-packs/">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="bundle">
+					<div class="card text-center">
+						<div class="discount"><span>38%</span>off</div>
+						<div class="card-body">
+							<h4>12 Month Supply</h4>
+							<h5 class="my-0">16 AlgaeCal Plus</h5>
+							<h5>12 Strontium Boost</h5>
+							<div class="card-img"><img src="/img/bundles/bottles3.png" alt="3 Month Supply"></div>
+							<div class="price"><sup>$</sup>717<span>usd</span></div>
+							<div class="highlight">Only <strong><sup>$</sup>1.97</strong>/Day</div>
+							<div class="add-to-cart">
+								<a class="cta-badge" href="https://www.algaecal.com/product/bone-builder-packs/">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Supplement Facts -->
+	<div class="container supplement-facts">
+		<div class="row">
+			<div class="col-md mb-5">
+				<!-- AlgaeCal Plus Table -->
+				<h4 class="text-center"><strong>AlgaeCal Plus</strong></h4>
+				<table class="algaecal-table">
+					<tbody>
+						<tr>
+							<td colspan="2">
+								<h3 class="text-center mt-3 mb-0">Supplement Facts</h3>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2" colspan="2">
+								<strong>4 Capsules Per Day
+								<br>
+								Servings Per Container: 22</strong>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-2"></div></td>
+						</tr>
+						<tr>
+							<td class="px-1">
+								Amount Per Serving
+							</td>
+							<td class="text-right px-1">
+								%DV
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-1"></div></td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2 pt-2">
+								<h5>Vitamin C 50mg</h5>
+								(as calcium ascorbate)
+							</td>
+							<td class="text-right px-2" valign="top">
+								<h5>84%</h5>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2">
+								<h5>Vitamin D3 1600 IU</h5>
+								(as cholecalciferol)
+							</td>
+							<td class="text-right px-2" valign="top">
+								<h5>400%</h5>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2">
+								<h5>Vitamin K2 100 mcg</h5>
+								(as menaquinone-7)
+							</td>
+							<td class="text-right px-2" valign="top">
+								<h5>126%</h5>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2">
+								<h5>Calcium 720 mg</h5>
+								(from algas calcareas)
+							</td>
+							<td class="text-right px-2" valign="top">
+								<h5>72%</h5>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2">
+								<h5>Magnesium 350 mg</h5>
+								(from algas calcareas and magnesium oxide)
+							</td>
+							<td class="text-right px-2" valign="top">
+								<h5>88%</h5>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-2"></div></td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2">
+								<h5>Boron 3.0 mg*</h5>
+								(as glycinate)
+							</td>
+							<td class="text-right px-2" valign="top">
+								
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-2"></div></td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2" colspan="2">
+								*Daily Value (DV) not established
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- Strontium Boost Table -->
+			<div class="col-md mb-5">
+				<h4 class="text-center"><strong>Strontium Boost</strong></h4>
+				<table class="algaecal-table">
+					<tbody>
+						<tr>
+							<td colspan="2">
+								<h3 class="text-center mt-3 mb-0">Supplement Facts</h3>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2" colspan="2">
+								<strong>2 Capsules Per Day
+								<br>
+								Servings Per Container: 30</strong>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-2"></div></td>
+						</tr>
+						<tr>
+							<td class="px-1">
+								Amount Per Serving
+							</td>
+							<td class="text-right px-1">
+								
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-1"></div></td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2 pt-2">
+								<h5>Strontium</h5>
+								(from Strontium Citrate)
+							</td>
+							<td class="text-right px-2" valign="top">
+								<h5>680mg*</h5>
+							</td>
+						</tr>
+						<tr>
+							<td class="px-1" colspan="2"><div class="black-bar py-2"></div></td>
+						</tr>
+						<tr>
+							<td class="px-2 pb-2" colspan="2">
+								*Daily Value (DV) not established
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- /Supplement Facts -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 px-0 mx-0">
+				<!-- Guarantee -->
+				<div class="container guarantee pb-5">
+					<div class="row mx-1 p-4">
+						<div class="col bg-white">
+							<div class="container py-3">
+								<img src="https://www.algaecal.com/wp-content/uploads/Final_960px-e1478104202859.png" alt="7 Year Guarantee">
+								<h3 class="py-4">Stronger Bones for 7 Years Guarantee</h3>
+								<p class="text-left">
+									When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in EVERY follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked! <a href="#" data-toggle="modal" data-target="#modal">Click Here for Details</a>
+								</p>
+								<p class="text-center">
+									<img src="/img/neuls.jpg" alt="Dean Neuls">
+								</p>
+								<p class="ml-5 text-left neuls-name">
+									<strong>Dean Neuls</strong><br>
+									CEO and Co-Founder,<br>
+									AlgaeCal Inc.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body" id="modal-body">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg px-0 mx-0">
+				<!-- As Seen On -->
+				<div class="container as-seen-on mb-5">
+					<div class="card">
+						<div class="card-header">
+							<h4 class="my-0">As Seen On</h4>
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<img src="/img/asSeenOn/oz.png" alt="Dr. Oz">
+								</div>
+								<div class="col">
+									<img src="/img/asSeenOn/fox.png" alt="Fox News">
+								</div>
+								<div class="col">
+									<img src="/img/asSeenOn/pbs.png" alt="PBS">
+								</div>
+								<div class="col">
+									<img src="/img/asSeenOn/amazon.png" alt="Amazon">
+								</div>
+								<div class="w-100 my-2"></div>
+								<div class="col">
+									<img src="/img/asSeenOn/foreverYoung.png" alt="Forever Young by Nicholas Perricone">
+								</div>
+								<div class="col">
+									<img src="/img/asSeenOn/yourBones.png" alt="Your Bones by Lara Pizzorno">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Scientific References -->
+				<div class="container references">
+					<h4>Scientific References</h4>
+					<ol>
+						<li>
+							Marques A, Ferreira RJ, Santos E, et al. The accuracy of osteoporotic fracture risk prediction tools: a systematic review and meta-analysis. Ann Rheum Dis. 2015 Nov;74(11):1958-67. doi: 10.1136/annrheumdis-2015-207907. Epub 2015 Aug 6. PMID: 26248637
+						</li>
+						<li>
+							Riggs BL, Melton LJ 3rd. The worldwide problem of osteoporosis: insights afforded by epidemiology. Bone. 1995 Nov;17(5 Suppl):505S-511S. PMID: 8573428
+						</li>
+						<li>
+							https://www.algaecal.com/expert-insights/prescription-drugs-that-cause-osteoporosis/
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container my-5">
+			<a class="cta-badge" href="#bundles-anchor">Buy Now</a>
+			<p class="py-4 mb-0">
+				<img src="/img/algaeCalLogo.png" alt="AlgaeCal">
+			</p>
+			<nav class="footer-nav">
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="#">Shipping &amp; Returns</a></li>
+					<li class="list-inline-item"><a href="#">Health Disclaimer</a></li>
+					<li class="list-inline-item"><a href="#">Legal and Privacy Policy</a></li>
+					<li class="list-inline-item"><a href="#">Contact</a></li>
+					<li class="list-inline-item"><a href="#">Order Now</a></li>
+				</ul>
+			</nav>
+			<div class="notice">
+				Copyright &copy; <span id="footer-year"></span> AlgaeCal
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+	<script id="__bs_script__">//<![CDATA[
+		document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.24.7'><\/script>".replace("HOST", location.hostname));
+	//]]></script>
+</body>
+</html>
